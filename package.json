@@ -1,6 +1,6 @@
 {
   "name": "khmer-auto-censored",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Khmer Auto Censored",
   "main": "./dist/main.js",
   "module": "./dist/main.mjs",
