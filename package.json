@@ -25,7 +25,7 @@
   "types": "./dist/main.d.ts",
   "keywords": [],
   "author": "Seanghay Yath <seanghay.dev@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "bumpp": "^8.2.1",
     "tsup": "^6.1.3",
