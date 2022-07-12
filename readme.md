@@ -2,6 +2,8 @@
 
 Automatically censored Khmer text
 
+[![test](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml/badge.svg)](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml)
+
 ## Usage
 
 ```js
