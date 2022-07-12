@@ -21,6 +21,10 @@ console.log(uncensored('បា.ញ់ស.ម្លាប់'))
 // បាញ់សម្លាប់
 ```
 
+## Contributing
+
+In order to add more words, please check [`dict.json`](./src/dict.json)
+
 ## License
 
 Apache-2.0
