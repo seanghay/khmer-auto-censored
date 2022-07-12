@@ -1,6 +1,6 @@
 {
   "name": "khmer-auto-censored",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Khmer Auto Censored",
   "main": "./dist/main.js",
   "module": "./dist/main.mjs",
@@ -23,7 +23,12 @@
     "import": "./dist/main.mjs"
   },
   "types": "./dist/main.d.ts",
-  "keywords": ["khmer", "km", "cambodia", "cambodian"],
+  "keywords": [
+    "khmer",
+    "km",
+    "cambodia",
+    "cambodian"
+  ],
   "author": "Seanghay Yath <seanghay.dev@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
