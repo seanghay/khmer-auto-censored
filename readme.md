@@ -11,6 +11,10 @@ console.log(censored('បាញ់សម្លាប់'))
 // បា.ញ់ស.ម្លាប់
 
 
+console.log(censored('បាញ់សម្លាប់', '_'))
+// បា_ញ់ស_ម្លាប់
+
+
 console.log(uncensored('បា.ញ់ស.ម្លាប់'))
 // បាញ់សម្លាប់
 ```
