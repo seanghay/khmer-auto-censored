@@ -23,7 +23,7 @@
     "import": "./dist/main.mjs"
   },
   "types": "./dist/main.d.ts",
-  "keywords": [],
+  "keywords": ["khmer", "km", "cambodia", "cambodian"],
   "author": "Seanghay Yath <seanghay.dev@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
