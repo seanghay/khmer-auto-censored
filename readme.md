@@ -1,6 +1,6 @@
 ## Khmer Auto Censored
 
-Automatically censored Khmer text
+Automatically **censored/uncensored** Khmer text
 
 [![test](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml/badge.svg)](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml)
 
