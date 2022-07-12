@@ -36,5 +36,13 @@
     "tsup": "^6.1.3",
     "typescript": "^4.7.4",
     "vitest": "^0.18.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanghay/khmer-auto-censored.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seanghay/khmer-auto-censored/issues" 
+  },
+  "homepage": "https://github.com/seanghay/khmer-auto-censored#readme"
 }
