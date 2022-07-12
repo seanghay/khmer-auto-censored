@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Khmer Auto Censored</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+		/>
+	</head>
+
+	<body>
+		<div id="app" style="max-width: 720px; margin: 0 auto; padding: 2em">
+			<h2 style="text-align: center">Khmer Auto Censored</h2>
+			<textarea
+				style="height: 200px"
+				name="input"
+				id="input"
+				placeholder="Input"
+			></textarea>
+
+			<h4>Result</h4>
+			
+      <textarea
+				style="height: 200px"
+				name="output"
+				id="output"
+				placeholder="Output"
+			></textarea>
+
+			<br />
+
+			<a href="https://github.com/seanghay/khmer-auto-censored"
+				>View on GitHub</a
+			>
+			<br />
+			<small
+				>Made with ❤️ by
+				<a href="https://github.com/seanghay">@seanghay</a></small
+			>
+		</div>
+
+		<script type="module">
+			import { censored } from "https://unpkg.com/khmer-auto-censored@0.0.1/dist/main.mjs"
+			const el = {
+				input: document.getElementById("input"),
+				output: document.getElementById("output"),
+			}
+
+			el.input.addEventListener("input", () => {
+				if (!el.input.value) {
+					el.output.value = ""
+					return
+				}
+				el.output.value = censored(el.input.value)
+			})
+		</script>
+	</body>
+</html>
