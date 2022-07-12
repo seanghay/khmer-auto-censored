@@ -20,7 +20,10 @@
 	</head>
 
 	<body>
-		<div id="app" style="max-width: 720px; margin: 0 auto; padding: 2em">
+		<div id="loader" style="max-width: 720px; margin: 0 auto; padding: 2em; display: grid; place-items: center; min-height: 100vh;">
+			<h3 style="text-align: center">Loading...</h3>
+		</div>
+		<div id="app" style="max-width: 720px; margin: 0 auto; padding: 2em; display: none;">
 			<h2 style="text-align: center">Khmer Auto Censored</h2>
 			<textarea
 				style="height: 200px"
@@ -55,6 +58,8 @@
 			const el = {
 				input: document.getElementById("input"),
 				output: document.getElementById("output"),
+				loader: document.getElementById('loader'),
+				app: document.getElementById('app')
 			}
 
 			el.input.addEventListener("input", () => {
@@ -64,6 +69,9 @@
 				}
 				el.output.value = censored(el.input.value)
 			})
+
+			el.app.style.display = 'block';
+			el.loader.style.display = 'none';
 		</script>
 	</body>
 </html>
