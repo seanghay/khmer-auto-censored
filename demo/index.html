@@ -40,12 +40,16 @@
 		</div>
 		<div id="app" style="max-width: 720px; margin: 0 auto; padding: 2em; display: none;">
 			<h2 style="text-align: center">Khmer Auto Censored</h2>
+			
 			<textarea
 				style="height: 200px"
 				name="input"
 				id="input"
 				placeholder="Input"
 			></textarea>
+
+			<label for="delimiter">Delimiter</label>
+			<input style="font-weight: bold" placeholder="Delimiter" type="text" value="." id="delimiter" name="delimiter">
 
 			<h4>Result</h4>
 			
@@ -74,16 +78,21 @@
 				input: document.getElementById("input"),
 				output: document.getElementById("output"),
 				loader: document.getElementById('loader'),
-				app: document.getElementById('app')
+				app: document.getElementById('app'),
+				delimiter: document.getElementById('delimiter')
 			}
 
-			el.input.addEventListener("input", () => {
+			el.input.addEventListener("input", invalidate)
+			el.delimiter.addEventListener("input", invalidate)
+
+			function invalidate() {
 				if (!el.input.value) {
 					el.output.value = ""
 					return
 				}
-				el.output.value = censored(el.input.value)
-			})
+				const del = el.delimiter.value;
+				el.output.value = censored(el.input.value, del)
+			}
 
 			el.app.style.display = 'block';
 			el.loader.style.display = 'none';
