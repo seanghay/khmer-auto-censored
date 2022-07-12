@@ -1,6 +1,6 @@
 {
   "name": "khmer-auto-censored",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Khmer Auto Censored",
   "main": "./dist/main.js",
   "module": "./dist/main.mjs",
@@ -42,7 +42,7 @@
     "url": "git+https://github.com/seanghay/khmer-auto-censored.git"
   },
   "bugs": {
-    "url": "https://github.com/seanghay/khmer-auto-censored/issues" 
+    "url": "https://github.com/seanghay/khmer-auto-censored/issues"
   },
   "homepage": "https://github.com/seanghay/khmer-auto-censored#readme"
 }
