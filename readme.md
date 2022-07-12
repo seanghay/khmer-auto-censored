@@ -2,9 +2,11 @@
 
 Automatically **censored/uncensored** Khmer text
 
+[![npm](https://shields.io/npm/v/khmer-auto-censored)](https://npmjs.com/package/khmer-auto-censored)
 [![test](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml/badge.svg)](https://github.com/seanghay/khmer-auto-censored/actions/workflows/test.yml)
 
 <img src=https://user-images.githubusercontent.com/15277233/178417612-0c4b0c5f-7ff4-486d-b943-f6ae659c3ac1.png width=720>
+
 
 ## Usage
 
